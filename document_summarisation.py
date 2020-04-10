@@ -1,3 +1,12 @@
+"""
+Document summarisation similar to TextRank and LexRank. 
+
+Uses tf-idf measure of each word in sentence to create sentence vectors. Compares sentence vectors using cosine similarity 
+function, creating adjacency matrix to represent graph where nodes are sentences and edges are cosine similarity between each pair.
+
+Runs PageRank algorithm on adjacency matrix to find the sentences which are most important to the document, producing summary.
+"""
+
 import string
 import os
 import numpy as np
@@ -83,7 +92,8 @@ def main():
     n = len(document)
     adjacency_matrix = np.zeros((n, n))
 
-    for i in range(n):
+    for i in range(n):0
+speech-and-lang
         for j in range(n):
             adjacency_matrix[i, j] = cosine_similarity(sentence_vectors[i], sentence_vectors[j])
 
