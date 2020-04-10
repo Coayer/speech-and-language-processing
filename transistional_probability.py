@@ -1,3 +1,7 @@
+"""
+Very basic implementation of transitional probability-based word segmentation.
+"""
+
 import string
 import pandas as pd
 import numpy as np
