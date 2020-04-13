@@ -92,8 +92,7 @@ def main():
     n = len(document)
     adjacency_matrix = np.zeros((n, n))
 
-    for i in range(n):0
-speech-and-lang
+    for i in range(n):
         for j in range(n):
             adjacency_matrix[i, j] = cosine_similarity(sentence_vectors[i], sentence_vectors[j])
 
